@@ -39,12 +39,12 @@ fun main() {
     val product: Product2?
     product = Product2("Celular", 3000.00)
 
-    product?.let { item ->
+    product.let { item ->
         item.price = 1300.00
         saveProduct(item)
     }
 
-    product?.run {
+    product.run {
         disable()
     }
 
@@ -52,8 +52,8 @@ fun main() {
         toString()
     }
 
-    println(product?.name)
-    println(product?.price)
+    println(product.name)
+    println(product.price)
 
     val alertDialogModel = AlertDialogModel()
 //    alertDialogModel.displayTitle("Dialog")
