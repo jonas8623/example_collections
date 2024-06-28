@@ -14,7 +14,7 @@ class MensagemAdapter(private val list: List<Mensagem>) :
     inner class MensagemViewHolder(view: View) : ViewHolder(view) {
         val textNome: TextView = view.findViewById(R.id.nameTextView)
         val textUltimaMensagem: TextView = view.findViewById(R.id.ultimaMensagemTextView)
-        val textHorario: TextView = view.findViewById(R.id.horarioTextView)
+//        val textHorario: TextView = view.findViewById(R.id.horarioTextView)
     }
 
     // Criar a visualização
@@ -24,11 +24,12 @@ class MensagemAdapter(private val list: List<Mensagem>) :
         return MensagemViewHolder(view = itemView)
     }
 
+    // vincular os dados com a view
     override fun onBindViewHolder(holder: MensagemViewHolder, position: Int) {
         val element = list[position]
         holder.textNome.text = element.nome
         holder.textUltimaMensagem.text = element.ultimaMensagem
-        holder.textHorario.text = element.horario
+//        holder.textHorario.text = element.horario
     }
 
     override fun getItemCount(): Int {

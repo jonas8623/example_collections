@@ -22,3 +22,17 @@
         app:layout_constraintVertical_bias="0.5"
         tools:listitem="@layout/item_lista" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--
+LinearLayoutHorizontal
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="horizontal"
+
+GridLayout
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        android:orientation="vertical"
+
+StaggeredLayout
+        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+        android:orientation="vertical"
+-->

@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
     <ImageView
@@ -23,9 +23,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
-        android:text="Jonas Quirino"
+        android:text="Jamilton Damasceno"
         android:textSize="16sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/perfilImageView"
         app:layout_constraintTop_toTopOf="@+id/perfilImageView" />
 
@@ -38,17 +39,10 @@
         android:text="última mensagem"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/perfilImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/perfilImageView"
         app:layout_constraintTop_toBottomOf="@+id/nameTextView"
         app:layout_constraintVertical_bias="0.057" />
 
-    <TextView
-        android:id="@+id/horarioTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:text="09:45"
-        app:layout_constraintBottom_toBottomOf="@+id/ultimaMensagemTextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nameTextView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

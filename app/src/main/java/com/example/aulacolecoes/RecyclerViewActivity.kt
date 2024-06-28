@@ -15,8 +15,10 @@ class RecyclerViewActivity : AppCompatActivity() {
 
         val list = listOf(
             Mensagem("Jonas", "Olá, tudo bem?", "10:30"),
-            Mensagem("Beto", "Olá, tudo bem?", "11:50"),
-            Mensagem("André", "Olá, tudo bem?", "09:45"),
+            Mensagem("Beto", "Olá, tudo bem?, Como você está?. Podemos verificar amanhã o aplicativo interno da empresa com o pessoal da fábrica. Você vem hoje para a nossa reunião?", "11:50"),
+            Mensagem("Jackson", "Bom dia Pessoal", "09:45"),
+            Mensagem("Vera", "Olá, tudo bem?, você vem hoje para a nossa reunião?", "09:45"),
+            Mensagem("Cesar", "Podemos verificar amanhã o aplicativo interno da empresa com o pessoal da fábrica", "09:45"),
         )
 
         recyclerView = findViewById(R.id.recycler_view)
